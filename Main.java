@@ -1,6 +1,3 @@
-import java.math.BigDecimal;
-
-
 public class Main{
 
     public void main(String[] args){
@@ -11,6 +8,9 @@ public class Main{
         Cigar.setPrice(12);
 
         System.out.printf("$%.2f%n", Cigar.getPrice());
+
+        Users employee01 = new Users("Jenna", Users.Role.Employee);
+        System.out.println(employee01.getName() + "\n" + employee01.getRole());
 
     }
     
